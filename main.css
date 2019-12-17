@@ -1,0 +1,246 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+
+* {
+	font-size: 16px;
+	line-height: 16px;
+	color: #ffffff;
+	font-family: 'Inconsolata', monospace;
+	margin: 0;
+	padding: 0px;
+}
+
+body {
+	background-color: #000000;
+}
+
+h1, ul, li {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav {
+    padding: 16px;
+}
+
+nav h1 {
+    font-size: 48px;
+	line-height: 48px;
+	letter-spacing: 4px;
+}
+
+#contact {
+    float: right;
+	margin-top: 8px;
+    font-size: 32px;
+	line-height: 32px;
+	vertical-align: bottom;
+}
+
+#contact span, #contact a {
+	font-size: inherit;
+	line-height: inherit;
+}
+
+#contact span {
+	color: #3af;
+}
+
+#introduction, #project_list {
+	display: inline-block;
+}
+
+#main {
+	background-image: url('images/milky-way-2695569_1920.jpg');
+	background-color: #000;
+	background-size: 100%;
+	background-position: 50% 50%;
+	height: 80vh;
+}
+
+#introduction {
+    padding: 64px 0px 64px 64px;
+    width: 60%;
+}
+
+#introduction h2 {
+	font-size: 64px;
+	line-height: 64px;
+	margin-bottom: 96px;
+	color: #000;
+	text-shadow: 0 0 1px #0cf, 0 0 1px #fff, 0 0 1px #0cf;
+}
+
+#introduction p {
+	font-size: 32px;
+	line-height: 32px;
+	margin: 32px 0;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 0 0 4px #000, 0 0 2px #000, 0 0 1px #000, 0 0 10px #ccc;
+}
+
+#introduction h2, #introduction p {
+	opacity: 0.9;
+}
+
+#project_list {
+    background-color: #000;
+    background-color: rgba(0,0,0,0.75);
+    height: 60vh;
+    vertical-align: top;
+	margin-top: 32px;
+	margin-right: 32px;
+	width: 20vw;
+	float: right;
+	border: 1px solid #fff;
+	border-color: rgba(255,255,255,0.5);
+	border-radius: 4px;
+}
+
+#project_list h2 {
+	margin: 16px;
+	font-size: 32px;
+	line-height: 32px;
+	text-align: center;
+}
+
+#project_list ul {
+    width: 20vw;
+}
+
+#project_list li {
+	display: block;
+	margin: 0 auto;
+	padding: 16px;
+	border-bottom: 1px solid #fff;
+	border-color: rgba(255,255,255,0.5);
+	margin: 0 32px;
+}
+
+#project_list li:first-child {
+    border-top: 1px solid #fff;
+    border-top-color: rgb(255, 255, 255);
+	border-color: rgba(255,255,255,0.5);
+}
+
+#project_list li a {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+#project_list li a:hover {
+	text-shadow: 0 0 2px #fff;
+	cursor: pointer;
+}
+
+footer {
+    text-align: right;
+    padding: 16px 16px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+	#contact {
+		float: none;
+	}
+
+	#main {
+		height: auto;
+		text-align: center;
+	}
+
+	#introduction {
+		width: 100%;
+	}
+
+	#introduction h2 {
+		font-size: 48px;
+		line-height: 48px;
+	}
+
+	#introduction p {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	#project_list {
+		height: auto;
+		margin-right: 0;
+		float: none;
+		margin-bottom: 16px;
+	}
+
+	#project_list ul {
+		width: auto;
+	}
+
+	#introduction, #project_list {
+		text-align: left;
+	}
+
+	#project_list li:last-child {
+		border-bottom: none;
+	}
+
+	footer {
+		position: initial;
+	}
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait) {
+	#contact {
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	#introduction {
+		padding: 32px 0px 32px 32px;
+	}
+
+	#introduction h2 {
+		margin-bottom: 36px;
+	}
+
+	#introduction p {
+		margin: 0 32px 16px 0;
+	}
+
+	#project_list {
+		margin-top: 128px;
+		width: 80vw;
+	}
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape) {
+	#contact {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	#introduction {
+		padding: 16px 0px 16px 16px;
+	}
+
+	#introduction h2 {
+		margin-bottom: 16px;
+	}
+
+	#introduction p {
+		margin: 8px;
+	}
+
+	#project_list {
+		width: auto;
+	}
+}
